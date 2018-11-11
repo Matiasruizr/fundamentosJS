@@ -84,8 +84,47 @@ function cumpleanos(persona) {
     }
 }
 
+# Comparaciones
+Existen varias maneras de comparar variables u objetos dentro de javascript. En el primer ejemplo le asignamos a X un valor numérico y a Y un string. Para poder compararlos debemos agregar dos signos de igual (==). Esto los convierte al mismo tipo de valor y permite que se puedan comparar.
+
+Cuando realizamos operaciones es recomendable usar tres símbolos de igual (===). Esto permite que JavasScript no iguale las variables que son de distinto tipo. Te recomendamos que uses el triple igual siempre que estés comparando variables.
+
+Existen cinco tipos de datos que son primitivos:
+
+Boolean
+Null
+Undefined
+Number
+String
+
+# Condicionales
+if (condicion ) {
+
+} else {
+
+}
+
+Si (se cumple esta condicion ) { // entonces ejecuta lo que esta entre llaves 
+
+} sino { // ejecuta lo que esta entre estas otras llaves
+
+}
+
+# Arrow Functions
+ermiten una nomenclatura más corta para escribir expresiones de funciones. Este tipo de funciones deben definirse antes de ser utilizadas.
+
+Al escribir las Arrow Functions no es necesario escribir la palabra function, la palabra return, ni las llaves.
+
+Es básicamente asignar a una variable una función.
+
 
 # Buenas practicas
 https://tutobasico.com/convenciones-javascript/
 
 La llamada al fichero js (<script src=”fichero.js”>, se debe poner lo más abajo posible en el body.
+
+No utilices "Magic numbers", si hay un número fijo, utiliza una constante
+Las contastantes se escriben en Mayusculas y sin camelCase, sino que separada por guinos
+const DIAS_DEL_ANO = 3
+
+Podemos debuggear el programa simplemente escribiendo debugger
