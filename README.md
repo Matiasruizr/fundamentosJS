@@ -51,6 +51,40 @@ Para que la ejecución de una función no modifique una variable global usamos p
 
 Es posible utilizar el mismo nombre para una variable global y para el parámetro de una función con un alcance local.
 
+# Objetos
+Los objetos se definen con {}(llaves) para asignarlo a una variable se hace de esta manera var ejemplo = {}
+
+Los objetos se componen por propiedades y valores, se utiliza ’,' para separar cada propiedad
+
+var miObjeto = {
+	//propiedad: 'valor'
+	direccion: 'Alguna direccion, caracas, venezuela',
+	//key:	     'value' (en ingles)
+	codigoPostal: '1020'
+}
+
+# Destructurar objeto
+En una funcion podemos obtener de un objeto, solo los parametros que buscamos y obtenerlos como variables, Ejemplo:
+
+// Acá obtenemos nombre y edad de persona
+function imprimirNombreEdad(persona) {
+    var { nombre , edad } = persona
+    console.log(`Hola me llamo ${nombre} y tengo ${edad} años`)
+}
+
+# Parametros como referencia o como valor
+Javascript se comporta de manera distinta cuando le pasamos un objeto como parámetro.
+
+Cuando los objetos se pasan como una referencia, estos se modifican fuera de la función. Para solucionar esto se puede crear un objeto diferente. Esto lo podemos hacer colocando tres puntos antes del nombre. Ej …persona.
+
+function cumpleanos(persona) {
+    return {
+        ...persona,
+        edad: persona.edad + 1
+    }
+}
+
+
 # Buenas practicas
 https://tutobasico.com/convenciones-javascript/
 
