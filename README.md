@@ -44,6 +44,10 @@ Una funcion esta compuesta por:
     Argumentos o parametros de la función.(a, b)
     y las sentecionas o procedimientos que definen la función. estas encerradas en llaves {}
 
+
+# Funciones por parametro
+Podemos pasar funciones como parametro de otra función
+
 # Alcance de funciones
 Si una variable no está definida dentro del cuerpo de una función hablamos de una variable global. Por el contrario, una variable definida dentro de una función es una variable local.
 
@@ -128,3 +132,25 @@ Las contastantes se escriben en Mayusculas y sin camelCase, sino que separada po
 const DIAS_DEL_ANO = 3
 
 Podemos debuggear el programa simplemente escribiendo debugger
+
+
+Valores falsy (valores falsos) en Javascript:
+
+false
+
+0
+
+null
+
+""
+
+undefined
+
+NaN
+
+Los demás son valores Truthy (valores verdaderos).
+
+# Ecmascript 2015
+
+Arrow functions
+Clases 
